@@ -7,9 +7,6 @@
 
 [short description and link to the documentation]
 
-## Disclaimer
-* Use a JRE/JDK 1.8
-
 ## How to build the archetype
 
 ```
