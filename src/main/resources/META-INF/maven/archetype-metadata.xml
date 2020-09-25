@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor
-    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" 
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd"
+        name="bonitasoft-theme-archetype">
+    <requiredProperties>
+        <requiredProperty key="displayName"/>
+        <requiredProperty key="name"/>
+        <requiredProperty key="description">
+            <defaultValue>Describe your project here</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
     <fileSets>
     	<fileSet filtered="false" encoding="UTF-8">
             <directory>dist</directory>
@@ -41,15 +49,4 @@
             </includes>
         </fileSet>
     </fileSets>
-    <requiredProperties>
-        <requiredProperty key="themeDisplayName">
-            <defaultValue>My Theme</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="themeName">
-            <defaultValue>myTheme</defaultValue>
-        </requiredProperty>
-        <requiredProperty key="themeDesc">
-            <defaultValue>My Theme description</defaultValue>
-        </requiredProperty>
-    </requiredProperties>
 </archetype-descriptor>
