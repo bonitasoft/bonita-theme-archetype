@@ -22,7 +22,7 @@ mvn archetype:generate \
     -DarchetypeGroupId=org.bonitasoft.archetypes \
     -DarchetypeArtifactId=bonita-theme-archetype \
     -DgroupId=org.company.api \
-    -DartifactId=my-rest-api \
+    -DartifactId=my-theme \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname=myTheme \
     -DdisplayName="My Theme" 
