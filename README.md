@@ -5,7 +5,10 @@
 
 # bonita-theme-archetype
 
-[short description and link to the documentation]
+This project contains a maven archetype, which allow to easily setup a Bonita theme project.  
+A theme project is node project wrapped in a maven project that uses:
+* [maven-frontend-plugin](https://github.com/eirslett/frontend-maven-plugin) to setup node and npm binaries
+* [node-sass](https://www.npmjs.com/package/node-sass) and [bootstrap-sass](https://www.npmjs.com/package/bootstrap-sass) to create your Bootstrap 3 theme using [sass](https://sass-lang.com/)
 
 ## How to build the archetype
 
@@ -28,7 +31,7 @@ mvn archetype:generate \
     -DdisplayName="My Theme" 
 ```
 
-### Optionnal archetype parameters
+### Optional archetype parameters
 
 
 | Parameter         | Required   | Default value                     | Description             |
