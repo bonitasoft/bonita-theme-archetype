@@ -127,7 +127,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:bonitasoft/bonita-theme-archetype.git</developerConnection>
-        <connection>scm:git:git@github.com:bonitasoft/bonita-theme-extension-archetype.git</connection>
+        <connection>scm:git:git@github.com:bonitasoft/bonita-theme-archetype.git</connection>
         <url>https://github.com/bonitasoft/bonita-theme-archetype</url>
         <tag>HEAD</tag>
     </scm>
