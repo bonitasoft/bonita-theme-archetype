@@ -10,6 +10,9 @@
         <requiredProperty key="description">
             <defaultValue>Describe your project here</defaultValue>
         </requiredProperty>
+        <requiredProperty key="wrapper">
+            <defaultValue>true</defaultValue>
+        </requiredProperty>
     </requiredProperties>
     <fileSets>
     	<fileSet filtered="false" encoding="UTF-8">

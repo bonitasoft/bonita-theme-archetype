@@ -1,5 +1,5 @@
 {
-  "name": "$name",
+  "name": "$artifactId",
   "version": "0.0.1",
   "description": "$description",
   "license": "GPL-2.0-or-later",

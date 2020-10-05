@@ -31,7 +31,7 @@ mvn archetype:generate \
 ### Optionnal archetype parameters
 
 
-| Parameter         | Required   | Default value                     | Description                                                                            										   |
+| Parameter         | Required   | Default value                     | Description             |
 | ------------------|------------|-----------------------------------|-------------------------|
 | -Ddescription     | __false__  |     Describe your project here    | Description of the theme|
- 
+| -Dwrapper         | __false__  | true                              | If set to true, project will setup a [maven wrapper](https://github.com/takari/maven-wrapper)|

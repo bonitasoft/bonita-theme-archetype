@@ -17,6 +17,7 @@
 	</properties>
 
 	<build>
+		<defaultGoal>verify</defaultGoal>
 		<pluginManagement>
 			<plugins>
 				<plugin>
