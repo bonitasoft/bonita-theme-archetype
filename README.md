@@ -24,7 +24,7 @@ cd bonita-theme-archetype
 mvn archetype:generate \
     -DarchetypeGroupId=org.bonitasoft.archetypes \
     -DarchetypeArtifactId=bonita-theme-archetype \
-    -DgroupId=org.company.api \
+    -DgroupId=org.company.theme \
     -DartifactId=my-theme \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname=myTheme \
