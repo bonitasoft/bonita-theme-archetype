@@ -20,5 +20,18 @@
 			</includes>
 			<filtered>true</filtered>
 		</fileSet>
+        <fileSet>
+            <outputDirectory>META-INF/maven/${groupId}/${artifactId}</outputDirectory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <outputDirectory>META-INF/maven/${groupId}/${artifactId}</outputDirectory>
+            <includes>
+                <include>pom.properties</include>
+            </includes>
+            <filtered>true</filtered>
+        </fileSet>
 	</fileSets>
 </assembly>
