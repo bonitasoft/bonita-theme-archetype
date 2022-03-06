@@ -11,9 +11,11 @@
 	<description>${description}</description>
 
 	<properties>
-		<node.version>v14.17.3</node.version>
-        <npm.version>6.14.13</npm.version>
-        <frontend-maven-plugin.version>1.12.0</frontend-maven-plugin.version>
+		<node.version>v16.14.0</node.version>
+        <npm.version>8.3.1</npm.version>
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -32,8 +34,12 @@
 					</configuration>
 				</plugin>
 				<plugin>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>${maven-assembly-plugin.version}</version>
+				</plugin>
+				<plugin>
 					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.1.0</version>
+					<version>${maven-clean-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>

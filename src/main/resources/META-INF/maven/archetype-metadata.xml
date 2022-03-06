@@ -6,7 +6,9 @@
         name="bonitasoft-theme-archetype">
     <requiredProperties>
         <requiredProperty key="displayName"/>
-        <requiredProperty key="name"/>
+        <requiredProperty key="name">
+            <validationRegex>^[a-zA-Z0-9]+$</validationRegex>
+        </requiredProperty>
         <requiredProperty key="description">
             <defaultValue>Describe your project here</defaultValue>
         </requiredProperty>
@@ -55,6 +57,12 @@
             <directory/>
             <includes>
                 <include>content.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
             </includes>
         </fileSet>
     </fileSets>
