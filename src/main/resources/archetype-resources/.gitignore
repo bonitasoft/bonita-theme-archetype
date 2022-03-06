@@ -1,0 +1,8 @@
+# maven build folder
+target
+
+# temporary node build folder
+node_modules
+
+# uncomment to ignore IntelliJ project content
+#.idea
