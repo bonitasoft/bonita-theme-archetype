@@ -9,7 +9,7 @@
   "devDependencies": {
     "node-sass": "7.0.1",
     "postcss-cli": "9.1.0",
-    "postcss": "8.4.7",
+    "postcss": "8.4.31",
     "autoprefixer": "10.4.2",
     "bootstrap-sass": "3.4.1"
   }
