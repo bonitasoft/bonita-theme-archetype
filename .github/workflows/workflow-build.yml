@@ -13,13 +13,13 @@ jobs:
     outputs:
       app_version: ${{steps.get-app-version.outputs.APP_VERSION}}
     steps:
-    - uses: actions/checkout@v2
-    - name: Cache Maven packages
-      uses: actions/cache@v2
+    - uses: actions/checkout@v4
+    - name: Install Java and Maven
+      uses: actions/setup-java@v3
       with:
-        path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-m2
+        java-version: 17
+        distribution: 'temurin'
+        cache: 'maven'
     - id: get-app-version
       name: Get archetype version
       run: echo "APP_VERSION=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
