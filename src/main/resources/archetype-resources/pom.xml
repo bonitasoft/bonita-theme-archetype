@@ -13,9 +13,9 @@
 	<properties>
 		<node.version>v16.14.0</node.version>
         <npm.version>8.3.1</npm.version>
-        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
-		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
-		<maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+        <frontend-maven-plugin.version>1.14.2</frontend-maven-plugin.version>
+		<maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
+		<maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
