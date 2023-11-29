@@ -19,6 +19,7 @@ jobs:
       with:
         java-version: 17
         distribution: 'temurin'
+        cache: 'maven'
     - id: get-app-version
       name: Get archetype version
       run: echo "APP_VERSION=$(mvn -q -Dexec.executable=echo -Dexec.args='${project.version}' --non-recursive exec:exec)" >> $GITHUB_OUTPUT
@@ -47,7 +48,6 @@ jobs:
         with:
           java-version: 17
           distribution: 'temurin'
-          cache: 'maven'
       - name: Download latest archetype snapshot
         uses: actions/download-artifact@v2
         with:
