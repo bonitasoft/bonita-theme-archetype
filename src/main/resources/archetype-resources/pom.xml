@@ -10,6 +10,31 @@
 	<name>${displayName}</name>
 	<description>${description}</description>
 
+	<profiles>
+		<profile>
+			<id>keepNodeModules</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-clean-plugin</artifactId>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>node</directory>
+									<followSymlinks>false</followSymlinks>
+								</fileset>
+							</filesets>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 	<properties>
 		<node.version>v20.9.0</node.version>
 		<npm.version>10.8.1</npm.version>
